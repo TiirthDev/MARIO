@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="data:image/png;base64,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"
+      type="image/x-icon"
+    />
+    <title>MARIO | BY TIIRTH</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <audio id="coin" src="sounds/coin.wav"></audio>
+    <audio id="death" src="sounds/death.wav"></audio>
+    <audio id="gameover" src="sounds/gameover.wav"></audio>
+    <audio id="jump" src="sounds/jump.wav"></audio>
+    <audio id="levelup" src="sounds/levelup.wav"></audio>
+    <audio id="mushroom" src="sounds/mushroom.wav"></audio>
+    <audio id="superjump" src="sounds/superjump.wav"></audio>
+    <audio id="bump" src="sounds/bump.wav"></audio>
+    <audio id="stomp" src="sounds/stomp.wav"></audio>
+
+    <script src="https://kaboomjs.com/lib/0.5.0/kaboom.js"></script>
+    <script src="https://kaboomjs.com/lib/0.5.0/plugins/aseprite.js"></script>
+    <script src="https://kaboomjs.com/lib/0.5.0/plugins/pedit.js"></script>
+    <script src="https://kaboomjs.com/pub/legacy/kbmsprite.js"></script>
+
+    <script>
+      kaboom({
+        ...{
+          fullscreen: true,
+          width: 240,
+          height: 240,
+          scale: 1.4,
+          startScene: "main",
+          version: "0.5.0",
+          clearColor: [0, 0, 0, 1],
+        },
+        global: true,
+        plugins: [peditPlugin, asepritePlugin, kbmspritePlugin],
+      });
+      loadSprite("block", "sprites/block.png");
+      loadSprite("blue-block", "sprites/blue-block.png");
+      loadSprite("blue-brick", "sprites/blue-brick.png");
+      loadSprite("blue-evil-shroom", "sprites/blue-evil-shroom.png");
+      loadSprite("blue-steel", "sprites/blue-steel.png");
+      loadSprite("blue-surprise", "sprites/blue-surprise.png");
+      loadSprite("brick", "sprites/brick.png");
+      loadSprite("coin", "sprites/coin.png");
+      loadSprite("evil-shroom-1", "sprites/evil-shroom-1.png");
+      loadSprite("mario-standing", "sprites/mario-standing.png");
+      loadSprite("mushroom", "sprites/mushroom.png");
+      loadSprite("pipe-left", "sprites/pipe-left.png");
+      loadSprite("pipe-right", "sprites/pipe-right.png");
+      loadSprite("pipe-top-left-side", "sprites/pipe-top-left-side.png");
+      loadSprite("pipe-top-right-side", "sprites/pipe-top-right-side.png");
+      loadSprite("question", "sprites/question.png");
+      loadSprite("unboxed", "sprites/unboxed.png");
+      scene("lose", (args = {}) => {
+        add([
+          text(args.score),
+          origin("center"),
+          pos(width() / 2, height() / 2),
+          scale(10),
+        ]);
+      });
+      scene("main", (args = {}) => {
+        const MOVE_SPEED = 120;
+        const JUMP_FORCE = 360;
+        const BIG_JUMP_FORCE = 550;
+        let CURRENT_JUMP_FORCE = JUMP_FORCE;
+        const ENEMY_SPEED = 20;
+        const FALL_DEATH = 600;
+
+        var coinAudio = document.querySelector("#coin");
+        var deathAudio = document.querySelector("#death");
+        var gameoverAudio = document.querySelector("#gameover");
+        var jumpAudio = document.querySelector("#jump");
+        var levlupAudio = document.querySelector("#levelup");
+        var mushroomAudio = document.querySelector("#mushroom");
+        var superjumpAudio = document.querySelector("#superjump");
+        var bumpAudio = document.querySelector("#bump");
+        var stompAudio = document.querySelector("#stomp");
+
+        let isJumping = true;
+
+        layers(["obj", "ui"], "obj");
+
+        const maps = [
+          [
+            "                              ",
+            "                              ",
+            "                              ",
+            "                              ",
+            "                              ",
+            "    %   =*=%=                 ",
+            "                              ",
+            "                      -+      ",
+            "             ^   ^    ()      ",
+            "xxxxxxxxxxxxxxxxxxxxxxxx    xx",
+          ],
+          [
+            "£                              £",
+            "£                              £",
+            "£                              £",
+            "£        @@@@@      s          £",
+            "£                 s s s        £",
+            "£               s s s s s    -+£",
+            "£      !      s s s s s s    ()£",
+            "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+          ],
+        ];
+
+        const levelCfg = {
+          width: 20,
+          height: 20,
+          "=": [sprite("block"), solid()],
+          x: [sprite("brick"), solid()],
+          $: [sprite("coin"), "coin"],
+          "%": [sprite("question"), "coin-surprise", solid()],
+          "*": [sprite("question"), "mushroom-surprise", solid()],
+          "}": [sprite("unboxed"), solid()],
+          "(": [sprite("pipe-left"), scale(0.5), solid()],
+          ")": [sprite("pipe-right"), scale(0.5), solid()],
+          "-": [sprite("pipe-top-left-side"), scale(0.5), solid(), "pipe"],
+          "+": [sprite("pipe-top-right-side"), scale(0.5), solid(), "pipe"],
+          "^": [sprite("evil-shroom-1"), solid(), "dangerous"],
+          "#": [sprite("mushroom"), "mushroom", body()],
+          "£": [sprite("blue-brick"), solid(), scale(0.5)],
+          z: [sprite("blue-block"), solid(), scale(0.5)],
+          "@": [sprite("blue-surprise"), solid(), scale(0.5), "coin-surprise"],
+          "!": [sprite("blue-evil-shroom"), "dangerous", scale(0.5)],
+          s: [sprite("blue-steel"), solid(), scale(0.5)],
+        };
+
+        const levelIndex = args.level ?? 0;
+        const gameLevel = addLevel(maps[levelIndex], levelCfg);
+
+        const scoreGlobal = args.score ?? 0;
+        const scoreLabel = add([
+          text("Score:" + scoreGlobal),
+          pos(20, 6),
+          layer("ui"),
+          {
+            value: scoreGlobal,
+          },
+        ]);
+
+        add([text("Level:" + parseInt(levelIndex + 1)), pos(90, 6)]);
+
+        function big() {
+          let timer = 0;
+          let isBig = false;
+          return {
+            update() {
+              if (isBig) {
+                timer -= dt();
+                if (timer <= 0) {
+                  this.smallify();
+                }
+              }
+            },
+            isBig() {
+              return isBig;
+            },
+            smallify() {
+              this.scale = vec2(1);
+              timer = 0;
+              isBig = false;
+              CURRENT_JUMP_FORCE = JUMP_FORCE;
+            },
+            biggify(time) {
+              this.scale = vec2(2);
+              timer = time;
+              isBig = true;
+              CURRENT_JUMP_FORCE = BIG_JUMP_FORCE;
+            },
+          };
+        }
+
+        const player = add([
+          sprite("mario-standing"),
+          pos(30, 0),
+          body(),
+          big(),
+          origin("bot"),
+        ]);
+
+        player.collides("dangerous", (d) => {
+          if (isJumping) {
+            destroy(d);
+            stompAudio.play();
+          } else {
+            go("lose", { score: scoreLabel.value });
+            deathAudio.play();
+          }
+        });
+
+        player.action(() => {
+          camPos(player.pos);
+          if (player.pos.y >= FALL_DEATH) {
+            go("lose", { score: scoreLabel.value });
+            deathAudio.play();
+          }
+        });
+
+        keyDown("left", () => {
+          player.move(-MOVE_SPEED, 0);
+        });
+
+        keyDown("right", () => {
+          player.move(MOVE_SPEED, 0);
+        });
+
+        player.action(() => {
+          if (player.grounded()) {
+            isJumping = false;
+          }
+        });
+
+        keyPress("space", () => {
+          if (player.grounded()) {
+            isJumping = true;
+            player.jump(CURRENT_JUMP_FORCE);
+            jumpAudio.play();
+          }
+        });
+
+        player.on("headbump", (obj) => {
+          if (obj.is("coin-surprise")) {
+            gameLevel.spawn("$", obj.gridPos.sub(0, 1));
+            destroy(obj);
+            gameLevel.spawn("}", obj.gridPos.sub(0, 0));
+          }
+          if (obj.is("mushroom-surprise")) {
+            gameLevel.spawn("#", obj.gridPos.sub(0, 1));
+            destroy(obj);
+            gameLevel.spawn("}", obj.gridPos.sub(0, 0));
+          }
+          bumpAudio.play();
+        });
+
+        action("mushroom", (m) => {
+          m.move(20, 0);
+        });
+
+        player.collides("mushroom", (m) => {
+          player.biggify(6);
+          destroy(m);
+          mushroomAudio.play();
+        });
+
+        player.collides("coin", (c) => {
+          scoreLabel.value++;
+          scoreLabel.text = "Score:" + scoreLabel.value;
+          destroy(c);
+          coinAudio.play();
+        });
+
+        action("dangerous", (d) => {
+          d.move(-ENEMY_SPEED, 0);
+        });
+
+        player.collides("pipe", () => {
+          keyPress("down", () => {
+            go("main", {
+              level: (levelIndex + 1) % maps.length,
+              score: scoreLabel.value,
+            });
+            levlupAudio.play();
+          });
+        });
+      });
+      start("main");
+    </script>
+  </body>
+</html>
